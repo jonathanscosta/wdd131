@@ -1,3 +1,6 @@
+
+
+
 :root {
 
     --azul: rgb(65, 65, 164);
@@ -15,59 +18,77 @@
     box-sizing: border-box;
 }
 
-body {
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: var(--azul);
+    color: white;
+
+}
+header h1{
+    padding: 20px auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.menu{
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu.open{
+    display: flex;
+    flex-direction: column;
+
+    
+}
+.menu.open a{
+    text-decoration: none;
+    margin: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#botao-menu::before{
+    content: '☰';
+    font-size: 2rem;
+    color: white;
+}
+#botao-menu.open::before{
+    content: '❌';
+   
+}
+#botao-menu{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+
+
+main{
     max-width: 800px;
     margin: 0 auto;
 }
 
-
-
-header {
-    background-color: var(--azul);
-    border-radius: 5px 5px 0 0;
+.album{
     display: grid;
-    grid-template-columns: 1fr 2fr;
-
+    grid-template-columns: 1fr;
 }
 
-header nav ul {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+figure img{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+figure{
     text-align: center;
-    margin: auto 0;
-    padding: 10px;
-
-}
-
-header li {
-    text-decoration: none;
-    /* justify-content: center;
-    text-align: center; */
-}
-ul {
-    list-style: none;
-    margin-left: 20px;
-    font-size: 1.5rem;
-}
-
-a {
-    text-decoration: none;
-    color: black;
-
-}
-
-
-
-main {
-    font-family: 'Roboto', sans-serif;
-
-}
-
-.album {
-    display: grid;
-    grid-template-columns: repeat(3, fr);
-    gap: 20px;
 }
 
 footer {
