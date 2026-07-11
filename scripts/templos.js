@@ -1,14 +1,14 @@
 
-const menuBotao = document.querySelector("#botao-menu");
-const menuNavegacao = document.querySelector(".menu");
+// header
+
+const menuBtn = document.querySelector("#menu-btn");
+const header = document.querySelector("header");
 
 
-menuBotao.addEventListener("click", ()=>{
-    menuBotao.classList.toggle("open");
-    menuNavegacao.classList.toggle("open");
-})
+menuBtn.addEventListener('click', () => {
 
-
+    header.classList.toggle("open");
+});
 
 
 

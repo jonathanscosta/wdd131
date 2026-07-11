@@ -1,35 +1,56 @@
 @media (min-width: 768px){
 
-    .album{
-        grid-template-columns: repeat(3, 1fr);
+header {
+    background-color: var(--azul);
+    border-radius: 5px 5px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+#menu-btn{
 
-        }
-
-#botao-menu{
     display: none;
 }
-
-.menu{
+nav {
+    display: block;
+}
+nav ul{
     display: flex;
+    gap: 1.5rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
     flex-direction: row;
+    
+}
+
+nav a{
+    font-size: .9rem;
+    transition: all 0.3s ease;
+}
+nav a:hover{
+    font-size: 1rem;
+    border: none;
+}
+
+.album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
 }
 
 figure img{
-    padding: 20px;
+
     width: 100%;
     height: 250px;
     object-fit: cover;
-}
-
-.menu a{
-    text-decoration: none;
-    margin: 10px;
-    font-size: 1.2rem;
-    color: white;
-}
-.centralizar{
-    max-width: 800px;
-    margin: 0 auto;
+    display: block;
 }
     }
-
