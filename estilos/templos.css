@@ -1,0 +1,94 @@
+:root {
+
+    --azul: rgb(65, 65, 164);
+    --preto: rgba(40, 40, 40, 0.5);
+    --escuro: rgb(40, 40, 40);
+    --amarelo: rgb(212, 232, 99);
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+header {
+    background-color: var(--azul);
+    border-radius: 5px 5px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+    margin: auto 0;
+    padding: 10px;
+
+}
+
+header li {
+    text-decoration: none;
+    /* justify-content: center;
+    text-align: center; */
+}
+ul {
+    list-style: none;
+    margin-left: 20px;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+
+
+main {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.album {
+    display: grid;
+    grid-template-columns: repeat(3, fr);
+    gap: 20px;
+}
+
+footer {
+    font-family: "Playfair Display", serif;
+    background-color: var(--azul);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0;
+}
+
+#ultimaModificacao {
+    color: var(--amarelo);
+    font-size: 14px;
+}
