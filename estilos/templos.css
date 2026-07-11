@@ -84,14 +84,14 @@ nav a{
     text-decoration: none;
     align-items: center;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: all 0.3s ease;
     
 }
 nav a:hover{
     border: 1px solid white;
     border-radius: 5px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     padding: 10px;
 }
 
