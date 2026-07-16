@@ -15,20 +15,29 @@
     box-sizing: border-box;
 }
 
-body{
-    max-width: 350px;
-    height: 100%;
-     border: 1px solid black;
-    flex-direction: column;
+header, main, footer{
+
+    max-width: 400px;
+    margin: 0 auto;
 }
 
-.cabecalho {
-    display: flex;
-   
-    width: 100%;
-    margin: 0 auto;
-   
-    justify-content: center;
-    align-items: center;
-    justify-content: center;
+.cabecalho{
+    text-align: center;
+    padding: 30px;
+    background-color: var(--azul);
+    color: var(--branco);
+    border-radius: 5px 5px 0 0;
 }
+
+picture{
+    background-color: var(--rosa);
+}
+
+picture img{
+    margin: 5px 0;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+
