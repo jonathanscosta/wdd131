@@ -2,7 +2,9 @@
 :root{
     --azul: #2b60bd;
     --branco: #FFFFFF;
-    --rosa: #E56A8A;
+    --rosa: #fabacb;
+    --verde: #021F18;
+    
 }
 
 
@@ -47,20 +49,39 @@ picture img{
     margin: 10px auto;
     display: block;
     text-align: center;
-    font-family: 'Roboto', sans-serif   ;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid black;
+    width: 70%;
+    
 }
 .dados p{
 
     padding: 10px;
     
+    
 
 }
+
+.clima{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif   ;
+}
+.clima p{
+    padding: 10px;
+}
+
+.clima .icone{
+
+margin-top: 50px;
+align-items: center;}
 
 
 footer{
     font-family: "Playfair Display", serif;
     background-color: var(--rosa);
-    color: white;
+    color: var(--verde);
     text-align: center;
     padding: 15px;
     display: flex;
@@ -75,7 +96,7 @@ footer p {
 }
 
 #ultimaModificacao {
-    color: var(--branco); 
+    color: var(--verde); 
     font-size: 14px;
 }
 
