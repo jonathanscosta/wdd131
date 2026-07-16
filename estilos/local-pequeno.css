@@ -1,6 +1,6 @@
 
 :root{
-    --azul: #003DA5;
+    --azul: #2b60bd;
     --branco: #FFFFFF;
     --rosa: #E56A8A;
 }
@@ -17,8 +17,9 @@
 
 header, main, footer{
 
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
+    
 }
 
 .cabecalho{
@@ -31,13 +32,51 @@ header, main, footer{
 
 picture{
     background-color: var(--rosa);
+    display: block;
 }
 
 picture img{
-    margin: 5px 0;
+    display: block;
+    margin: 0 auto;
     width: 100%;
     object-fit: cover;
 
+}
+
+.dados{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif   ;
+}
+.dados p{
+
+    padding: 10px;
+    
+
+}
+
+
+footer{
+    font-family: "Playfair Display", serif;
+    background-color: var(--rosa);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 0 5px 5px;
+
+}
+
+footer p {
+    font-size: 18px;
+    margin: 0;
+}
+
+#ultimaModificacao {
+    color: var(--branco); 
+    font-size: 14px;
 }
 
 

@@ -16,23 +16,41 @@
 
     <title>Document</title>
     <link rel="stylesheet" href="estilos/local-pequeno.css">
+    <link rel="stylesheet" href="estilos/local-grande.css">
     <script src="scripts/local.js" defer></script>
 </head>
 
 <body>
 
     <header>
-        <div class="cabecalho"><h1>Vitória - ES</h1></div>
+        <div class="cabecalho">
+            <h1>Vitória - ES</h1>
+        </div>
     </header>
 
     <main>
         <picture>
+            <source media="(min-width: 1000px)" srcset="imagens/vitoria-grande.webp">
+            <source media="(min-width: 500px)" srcset="imagens/vitoria1.webp">
             <img src="imagens/vitoria-pequeno.webp" alt="foto da terceira ponte de vitória">
         </picture>
+        <section class="dados">
+            <h2>Dados</h2>
+
+            <p><strong>Área:</strong> 46.074 km²</p>
+            <p><strong>População:</strong> Aproximadamente 4,1 milhões de habitantes</p>
+            <p><strong>Capital:</strong> Vitória</p>
+            <p><strong>Idioma:</strong> Português</p>
+            <p><strong>Moeda:</strong> Real (BRL)</p>
+            <p><strong>Fuso Horário:</strong> UTC-3</p>
+            <p><strong>Código Telefônico:</strong> DDDs 27 e 28</p>
+            <p><strong>Sigla:</strong> ES</p >
+            </section>
     </main>
 
     <footer>
-
+        <p>&copy;<span id="anoatual"></span> &#128526; Jonathan Costa &#128526; - Ceará</p>
+        <p><span id="ultimaModificacao"></span></p>
     </footer>
 
 </body>

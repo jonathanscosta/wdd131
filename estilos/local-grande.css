@@ -1,0 +1,14 @@
+@media (min-width:1000px) {
+
+    header,
+    main,
+    footer {
+
+
+        max-width: none;
+        width: 100%;
+        margin: 0px auto;
+    }
+
+
+}
