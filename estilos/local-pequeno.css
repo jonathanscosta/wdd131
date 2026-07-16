@@ -1,0 +1,34 @@
+
+:root{
+    --azul: #003DA5;
+    --branco: #FFFFFF;
+    --rosa: #E56A8A;
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 350px;
+    height: 100%;
+     border: 1px solid black;
+    flex-direction: column;
+}
+
+.cabecalho {
+    display: flex;
+   
+    width: 100%;
+    margin: 0 auto;
+   
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
