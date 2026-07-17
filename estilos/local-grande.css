@@ -10,5 +10,51 @@
         margin: 0px auto;
     }
 
+    .hero{
+        position: relative;
+    }
+
+    .dados{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-bottom: none;
+        border-radius: 5px;
+        padding: 45px 20px 20px;
+
+        left: 20px;
+        top: 50px;
+        max-width: 30%;
+
+    }
+    .dados h2{
+        position: absolute;
+        left: -10px;
+        background-color: green;
+        top: 20px;
+        width: 50%;
+        color: var(--branco);
+    }
+
+     .clima{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-bottom: none;
+        border-radius: 5px;
+        padding: 45px 20px 20px;
+
+        right: 20px;
+        bottom: 50px;
+        max-width: 30%;
+
+    }
+    .clima h2{
+        position: absolute;
+        left: -10px;
+        background-color: green;
+        top: 20px;
+        width: 50%;
+        color: var(--branco);
+    }
+
 
 }

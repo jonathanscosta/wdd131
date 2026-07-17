@@ -31,6 +31,10 @@ header, main, footer{
     color: var(--branco);
     border-radius: 5px 5px 0 0;
 }
+main{
+    border-left: 1px solid var(--verde);
+    border-right: 1px solid var(--verde); 
+}
 
 picture{
     background-color: var(--rosa);
@@ -63,10 +67,11 @@ picture img{
 }
 
 .clima{
-    margin: 10px auto;
+    margin: 0 auto;
     display: block;
     text-align: center;
-    font-family: 'Roboto', sans-serif   ;
+    font-family: 'Roboto', sans-serif;
+     
 }
 .clima p{
     padding: 10px;
