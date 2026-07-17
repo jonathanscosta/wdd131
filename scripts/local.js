@@ -1,11 +1,12 @@
+
+
 // DOM: section dados
 const dados = document.querySelector(".dados");
 const titulo = document.createElement("h2");
 const infoDados = [["Área", "46.074 Km²"],["População", "4.1 milhões"],["Capital", "Vitória"],["Idioma", "português"]]
 
-
 titulo.textContent = "Dados";
-dados.appendChild(titulo)
+dados.appendChild(titulo);
 
 infoDados.forEach(item=>{
 
@@ -19,13 +20,13 @@ infoDados.forEach(item=>{
 // Dom: section clima
 const clima = document.querySelector(".clima")
 const temperatura = 26;
-const vento = 18
+const vento = 18;
 
 function calcularSensacaoTermica(temperatura,vento){
     const sensacao = temperatura + (vento*0.2)
     return sensacao
 }
-const sensacaoTermica = calcularSensacaoTermica(temperatura,vento)
+const sensacaoTermica = calcularSensacaoTermica(temperatura,vento);
 
 const infoClima = [["Temperatura", `${temperatura} °C`],["Condições", "Parcialmente Nublado"], ["Vento", `${vento} Km/h`], ["Sensação Térmica",`${sensacaoTermica}`]]
 
