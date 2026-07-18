@@ -30,9 +30,10 @@
         position: absolute;
         left: -10px;
         background-color: green;
-        top: 20px;
+        top: 10px;
         width: 50%;
         color: var(--branco);
+        padding: 5px 0;
     }
 
      .clima{
@@ -54,6 +55,7 @@
         top: 20px;
         width: 50%;
         color: var(--branco);
+        padding: 5px 0;
     }
 
 
