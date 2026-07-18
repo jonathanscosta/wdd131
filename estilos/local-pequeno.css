@@ -1,9 +1,12 @@
 
 :root{
-    --azul: #2b60bd;
-    --branco: #FFFFFF;
-    --rosa: #fabacb;
-    --verde: #021F18;
+    --azul: rgb(43, 96, 189);
+    --branco: rgb(255, 255, 255);
+    --rosa: rgb(250, 186, 203);
+    --verde: rgb(2, 31, 24);
+    --transparente: rgba(255, 255, 255, 0.3);
+    --verdeClaro: rgb(0,128,0);
+    --preto: rgb(0,0,0);
     
 }
 
@@ -54,7 +57,7 @@ picture img{
     display: block;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--preto);
     width: 70%;
     
 }

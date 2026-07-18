@@ -16,7 +16,7 @@
 
     .dados{
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: var(--transparente);
         border-bottom: none;
         border-radius: 5px;
         padding: 45px 20px 20px;
@@ -29,17 +29,18 @@
     .dados h2{
         position: absolute;
         left: -10px;
-        background-color: green;
+        background-color: var(--verdeClaro);
         top: 10px;
         width: 50%;
         color: var(--branco);
         padding: 5px 0;
         border-radius: 5px;
     }
+    
 
      .clima{
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.3);
+        background-color: var(--transparente);
         border-bottom: none;
         border-radius: 5px;
         padding: 45px 20px 20px;
@@ -50,14 +51,19 @@
 
     }
     .clima h2{
+
         position: absolute;
         left: -10px;
-        background-color: green;
+        background-color: var(--verdeClaro);
         top: 20px;
         width: 50%;
         color: var(--branco);
         padding: 5px 0;
         border-radius: 5px;
+    }
+    .clima h2::after{
+        content: " 🌤️";
+        font-size: 2rem;
     }
 
 
