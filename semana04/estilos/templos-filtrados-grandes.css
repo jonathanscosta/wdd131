@@ -1,0 +1,56 @@
+@media (min-width: 768px){
+
+header {
+    background-color: var(--azul);
+    border-radius: 5px 5px 0 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+    color: white;
+    padding: 1rem;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+}
+#menu-btn{
+
+    display: none;
+}
+nav {
+    display: block;
+}
+nav ul{
+    display: flex;
+    gap: 1.5rem;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    
+}
+
+nav a{
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+nav a:hover{
+    font-size: 1.2rem;
+    border: none;
+}
+
+.album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    
+}
+
+figure img{
+
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+    }
