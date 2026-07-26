@@ -21,7 +21,7 @@ const templos = [
         consagracao: "2005-08-07",
         area: 11500,
         urlDaImagem:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/aba-nigeria/400x250/aba-nigeria-temple-lds-273999-wallpaper.jpg"
+            "imagens/aba-templo.jpg"
     },
     {
         nomeDoTemplo: "Manti Utah",
@@ -29,7 +29,7 @@ const templos = [
         consagracao: "1888-05-21",
         area: 74792,
         urlDaImagem:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manti-utah/400x250/manti-temple-768192-wallpaper.jpg"
+            "imagens/manti-templo.jpg"
     },
     {
         nomeDoTemplo: "Payson Utah",
@@ -37,7 +37,7 @@ const templos = [
         consagracao: "2015-06-07",
         area: 96630,
         urlDaImagem:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/payson-utah/400x225/payson-utah-temple-exterior-1416671-wallpaper.jpg"
+            "imagens/payson-templo.jpg"
     },
     {
         nomeDoTemplo: "Yigo Guam",
@@ -45,7 +45,7 @@ const templos = [
         consagracao: "2020-05-02",
         area: 6861,
         urlDaImagem:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/yigo-guam/400x250/yigo_guam_temple_2.jpg"
+            "imagens/ygo-templo.jpg"
     },
     {
         nomeDoTemplo: "Washington D.C.",
@@ -53,7 +53,7 @@ const templos = [
         consagracao: "1974-11-19",
         area: 156558,
         urlDaImagem:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/washington-dc/400x250/washington_dc_temple-exterior-2.jpeg"
+           "imagens/washington-templo.jpeg"
     },
     {
         nomeDoTemplo: "Lima Peru",
@@ -61,7 +61,7 @@ const templos = [
         consagracao: "1986-01-10",
         area: 9600,
         urlDaImagem:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/lima-peru/400x250/lima-peru-temple-evening-1075606-wallpaper.jpg"
+            "imagens/peru-templo.jpg"
     },
     {
         nomeDoTemplo: "Cidade do México, México",
@@ -69,7 +69,7 @@ const templos = [
         consagracao: "1983-12-02",
         area: 116642,
         urlDaImagem:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
+            "imagens/mexico-templo.jpg"
     },
     {
         nomeDoTemplo: "Fortaleza, Brazil",
@@ -77,7 +77,7 @@ const templos = [
         consagracao: "2019-06-02",
         area: 36000,
         urlDaImagem:
-            "https://churchofjesuschristtemples.org/assets/img/temples/fortaleza-brazil-temple/fortaleza-brazil-temple-5569-main.jpg"
+            "imagens/fortaleza-templo.jpg"
     },
     {
         nomeDoTemplo: "Recife, Brazil",
@@ -85,32 +85,31 @@ const templos = [
         consagracao: "2000-12-15",
         area: 37200,
         urlDaImagem:
-            "https://churchofjesuschristtemples.org/assets/img/temples/recife-brazil-temple/recife-brazil-temple-36778-main.jpg"
+            "imagens/recife-templo.jpg"
     },
     {
         nomeDoTemplo: "São Paulo, Brazil",
         localizacao: "São Paulo, Brazil",
         consagracao: "1978-11-02",
         area: 59246,
-        urlDaImagem:
-            "https://churchofjesuschristtemples.org/assets/img/temples/_temp/017-S%C3%A3o-Paulo-Brazil-Temple.jpg"
+        urlDaImagem: "imagens/saopaulo-templo.jpg"
     },
 
 
 ];
 
-function filtrar(seletor, funcaoDeFiltro) {
+function filtrar (seletor,funcaoDeFiltro){
     const elemento = document.querySelector(seletor);
-    elemento.addEventListener('click', () => {
-        criarCard(templos.filter(funcaoDeFiltro));
+    elemento.addEventListener('click',()=>{
+    criarCard(templos.filter(funcaoDeFiltro));
     });
 
 }
-filtrar('#inicial', () => templos);
-filtrar('#antigo', templo => new Date(templo.consagracao) <= dataDeCorte);
-filtrar('#novo', templo => new Date(templo.consagracao) > dataDeCorte);
-filtrar('#grande', templo => templo.area >= areaTotal);
-filtrar('#pequeno', templo => templo.area < areaTotal);
+filtrar('#inicial',()=> templos);
+    filtrar('#antigo',templo => new Date(templo.consagracao)<=dataDeCorte);
+    filtrar('#novo',templo => new Date(templo.consagracao)>dataDeCorte);
+    filtrar('#grande',templo => templo.area >= areaTotal);
+    filtrar('#pequeno',templo => templo.area < areaTotal);
 
 
 
