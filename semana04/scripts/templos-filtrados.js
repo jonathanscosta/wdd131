@@ -11,7 +11,7 @@ menuBtn.addEventListener('click', () => {
 });
 
 // ______________main______________
-const dataDeCorte = new Date('1999-12-31');
+const dataDeCorte = new Date('1900-12-31');
 const areaTotal = 10000;
 
 const templos = [
