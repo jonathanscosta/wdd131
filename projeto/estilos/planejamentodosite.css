@@ -114,7 +114,7 @@ th{
 
 pre{
 
-    background:#eeeeee;
+    background: var(--borda);
 
     padding:20px;
 
