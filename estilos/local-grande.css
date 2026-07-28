@@ -1,21 +1,32 @@
 @media (min-width:1000px) {
 
+
+    body{
+        min-height: 100vh;
+    }
+
+
     header,
     main,
     footer {
 
 
-        max-width: none;
+        max-width: 1800px;
         width: 100%;
-        margin: 0 auto;
+        margin: auto;
 
    
+    }
+    main{
+        height: calc(100vh - 130px);
     }
 
 
     .hero{
         position: relative;
+        height: 100%;
     }
+   
 
     .dados{
         position: absolute;
@@ -24,8 +35,8 @@
         border-radius: 5px;
         padding: 45px 20px 20px;
 
-        left: 20px;
-        top: 50px;
+        left: 3%;
+        top: 6%;
         max-width: 30%;
 
     }
@@ -49,8 +60,8 @@
         border-radius: 5px;
         padding: 45px 20px 20px;
 
-        right: 20px;
-        bottom: 50px;
+        right: 3%;
+        bottom: 6%;
         max-width: 30%;
 
 
