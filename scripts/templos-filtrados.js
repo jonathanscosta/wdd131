@@ -12,7 +12,9 @@ menuBtn.addEventListener('click', () => {
 
 // ______________main______________
 const dataDeCorte = new Date('1900-12-31');
-const areaTotal = 10000;
+const dataDeCorte2 = new Date('2000-01-01');
+const areapequeno = 10000;
+const areagrande = 90000;
 
 const templos = [
     {
@@ -107,9 +109,9 @@ function filtrar (seletor,funcaoDeFiltro){
 }
 filtrar('#inicial',()=> templos);
     filtrar('#antigo',templo => new Date(templo.consagracao)<=dataDeCorte);
-    filtrar('#novo',templo => new Date(templo.consagracao)>dataDeCorte);
-    filtrar('#grande',templo => templo.area >= areaTotal);
-    filtrar('#pequeno',templo => templo.area < areaTotal);
+    filtrar('#novo',templo => new Date(templo.consagracao)>=dataDeCorte2);
+    filtrar('#grande',templo => templo.area >= areagrande);
+    filtrar('#pequeno',templo => templo.area <= areapequeno);
 
 
 
