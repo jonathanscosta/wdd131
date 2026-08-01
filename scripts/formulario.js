@@ -1,39 +1,61 @@
 // _______________________LISTA DE PRODUTOS_______________________
 
+
 const produtos = [
   {
     id: "fc-1888",
-    nome: "capacitor de fluxo",
+    nome: "Capacitor de fluxo",
     classificacaomedia: 4.5
   },
   {
     id: "fc-2050",
-    nome: "fios elétricos",
+    nome: "Fios elétricos",
     classificacaomedia: 4.7
   },
   {
     id: "fs-1987",
-    nome: "circuitos de tempo",
+    nome: "Circuitos de tempo",
     classificacaomedia: 3.5
   },
   {
     id: "ac-2000",
-    nome: "reator de baixa tensão",
+    nome: "Reator de baixa tensão",
     classificacaomedia: 3.9
   },
   {
     id: "jj-1969",
-    nome: "equalizador de distorção",
+    nome: "Equalizador de distorção",
     classificacaomedia: 5.0
   }
 ];
 
+// _______________________HEADER_______________________
+
+const cabecalho = document.querySelector("#cabecalho");
+const titulo = document.createElement("h1");
+titulo.textContent = "Avaliação do Produto";
+cabecalho.appendChild(titulo);
+
+// _______________________MAIN_______________________
 
 
+//  _________FUNÇÃO DE SELEÇÃO DE PRODUTOS___________
 
+function mostrarProdutos(produtos){
+  const selecionar = document.querySelector("#produto")
 
+  produtos.forEach(produto => {
+    const opcao = document.createElement("option");
+    opcao.value = produto.id;
+    opcao.textContent = `${produto.nome} ⭐ Classificação: ${produto.classificacaomedia}`
+    selecionar.appendChild(opcao);
+  });
+  
+}
+mostrarProdutos(produtos);
 
 // _______________________FOOTER_______________________
+
 const ano = document.querySelector("#anoatual");
 const ultima_modificacao = document.querySelector("#ultimaModificacao")
 

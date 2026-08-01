@@ -22,28 +22,65 @@
 </head>
 
 <body>
-    <header>
-        <h1 id="cabecalho"></h1>
+    <header id="cabecalho">
+
     </header>
 
     <main>
         <form method="get" action="avaliacao.html">
-        <fieldset>
-            <legend>Nome do produto</legend>
+            <fieldset class="produtos">
+                <legend>Nome do produto</legend>
 
-            <select name="produto" id="produto" required>
-                
+                <select name="produto" id="produto" required>
+                    <option value="opcao" selected disabled>Escolha um produto...</option>
 
-            </select>
-        </fieldset>
-        <legend>Data de Instalação</legend>
-        <fieldset>
 
-        </fieldset>
-        <legend>Avaliação Escrita</legend>
-        <fieldset>
+                </select>
+            </fieldset>
 
-        </fieldset>
+            <fieldset class="pontuar">
+
+                <legend>Classificação Geral</legend>
+
+                <div class="estrela">
+                <label for="1">⭐</label>
+                <input type="radio" id="1" name="avaliar" value="1">
+                </div>
+
+                <div class="estrela">
+
+                <label for="2">⭐⭐</label>
+                <input type="radio" id="2" name="avaliar" value="2">
+                </div>
+
+                <div class="estrela">
+
+                <label for="3">⭐⭐⭐</label>
+                <input type="radio" id="3" name="avaliar" value="3">
+                </div>
+
+                <div class="estrela">
+
+                <div class="estrela"></div>
+                <label for="4">⭐⭐⭐⭐</label>
+                <input type="radio" id="4" name="avaliar" value="4">
+                </div>
+
+                <div class="estrela">
+                    
+                <label for="5">⭐⭐⭐⭐⭐</label>
+                <input type="radio" id="5" name="avaliar" value="5">
+                </div>
+            </fieldset>
+
+
+            <fieldset class="classificar">
+                <legend>Data de Instalação</legend>
+            </fieldset>
+
+            <fieldset class="avaliar">
+                <legend>Avaliação Escrita</legend>
+            </fieldset>
         </form>
     </main>
 
