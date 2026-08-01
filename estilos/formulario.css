@@ -5,7 +5,7 @@
 }
 
 body {
-    max-width: 360px;
+    max-width: 380px;
     height: 100vh;
     margin: 0 auto;
     
@@ -45,7 +45,7 @@ font-weight: 600;
 }
 
 fieldset{
-    margin: 20px 10px;
+    margin: 10px 10px;
 }
 select{
     padding: 10px;
@@ -71,6 +71,42 @@ select{
     transform: scale(1.5);
     margin-top: 5px;
 }
+
+.classificar input[type=date]{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.classificar input[type=checkbox]{
+    margin:5px 10px 5px 0;
+    transform: scale(1.5);
+}
+
+.avaliar textarea{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 100px;
+}
+.avaliar input[type=text]{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 300px;
+    height: 50px;
+}
+input[type=submit]{
+    padding: 10px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    display: block;
+    margin: 0 auto;
+    background-color: green;
+    color: white;
+    border-radius: 5px;
+    width: 80%;
+
+}
 footer {
     background-color: blue;
     color: white;
@@ -79,5 +115,5 @@ footer {
     padding: 10px;
     text-align: center;
     font-size: .7rem;
-    margin-top: 20px;
+    margin-top: 10px;
 }
