@@ -41,17 +41,39 @@ cabecalho.appendChild(titulo);
 
 //  _________FUNÇÃO DE SELEÇÃO DE PRODUTOS___________
 
-function mostrarProdutos(produtos){
-  const selecionar = document.querySelector("#produto")
+function mostrarProdutos(produtos) {
 
-  produtos.forEach(produto => {
-    const opcao = document.createElement("option");
-    opcao.value = produto.id;
-    opcao.textContent = `${produto.nome} ⭐ Classificação: ${produto.classificacaomedia}`
-    selecionar.appendChild(opcao);
-  });
-  
+    const fieldset = document.querySelector(".produtos");
+
+    const select = document.createElement("select");
+    select.name = "produto";
+    select.id = "produto";
+    select.required = true;
+
+    const opcaoVazia = document.createElement("option");
+    opcaoVazia.value = "";
+    opcaoVazia.textContent = "Escolha um produto...";
+    opcaoVazia.selected = true;
+    opcaoVazia.disabled = true;
+
+    select.appendChild(opcaoVazia);
+
+    produtos.forEach(produto => {
+
+        const opcao = document.createElement("option");
+
+        opcao.value = produto.id;
+        opcao.textContent =
+            `${produto.nome} ⭐ Classificação: ${produto.classificacaomedia}`;
+
+        select.appendChild(opcao);
+
+    });
+
+    fieldset.appendChild(select);
+
 }
+
 mostrarProdutos(produtos);
 
 // _______________________FOOTER_______________________
