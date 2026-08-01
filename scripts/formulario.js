@@ -44,16 +44,10 @@ cabecalho.appendChild(titulo);
 function mostrarProdutos(produtos) {
 
     const fieldset = document.querySelector(".produtos");
-    const select = document.querySelector("#produto")
+   
    
 
-    const opcaoVazia = document.createElement("option");
-    opcaoVazia.value = "";
-    opcaoVazia.textContent = "Escolha um produto...";
-    opcaoVazia.selected = true;
-    opcaoVazia.disabled = true;
-
-    select.appendChild(opcaoVazia);
+  
 
     produtos.forEach(produto => {
 
