@@ -44,11 +44,8 @@ cabecalho.appendChild(titulo);
 function mostrarProdutos(produtos) {
 
     const fieldset = document.querySelector(".produtos");
-
-    const select = document.createElement("select");
-    select.name = "produto";
-    select.id = "produto";
-    select.required = true;
+    const select = document.querySelector("#produto")
+   
 
     const opcaoVazia = document.createElement("option");
     opcaoVazia.value = "";
