@@ -44,10 +44,7 @@ cabecalho.appendChild(titulo);
 function mostrarProdutos(produtos) {
 
     const fieldset = document.querySelector(".produtos");
-   
-   
-
-  
+    const selecionar = document.querySelector("#produto")
 
     produtos.forEach(produto => {
 
@@ -57,7 +54,7 @@ function mostrarProdutos(produtos) {
         opcao.textContent =
             `${produto.nome} ⭐ Classificação: ${produto.classificacaomedia}`;
 
-        select.appendChild(opcao);
+        selecionar.appendChild(opcao);
 
     });
 
