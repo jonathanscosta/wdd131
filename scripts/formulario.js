@@ -63,3 +63,20 @@ const hoje = new Date();
 
 ano.textContent = hoje.getFullYear();
 ultima_modificacao.textContent = `Última modificação ${document.lastModified}`
+
+// _______________________CONTADOR PÁGINA AVALIACAO.HTML_______________________
+
+
+const contagem = document.querySelector("#contador");
+const texto = document.createElement("p");
+
+let contador = Number(localStorage.getItem("avaliacoes")) || 0;
+
+contador++;
+
+localStorage.setItem("avaliacoes", contador);
+
+texto.textContent = `Você fez ${contador} avaliações!`;
+
+contagem.appendChild(texto);
+
