@@ -1,43 +1,82 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    display: block;
-    align-items: center;
-    
+body {
+    max-width: 400px;
+    height: 100vh;
 }
-h1{
+
+header,
+main,
+footer {
+    width: 100%;
+}
+
+main {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+form {
+    background-color: rgb(234, 211, 211);
+}
+
+fieldset {
+    border: none;
+}
+
+
+h1 {
     background-color: blue;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 20px;
     text-align: center;
 }
+legend{
+padding-top: 20px;
+font-weight: 600;
+}
+
 fieldset{
-    display: flex;
-    flex-direction: column;
-    border: none;
-    padding: 20px;
+    margin: 20px 10px;
+}
+select{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .pontuar{
     display: flex;
-    justify-content:start;
-    flex-direction: row;
+    gap: 15px;
     align-items: flex-start;
+   
 }
 .estrela{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-right: 3%;
-    font-size: .9rem;
-   
 }
-.pontuar label{
+.estrela label{
+    font-size: .8rem;
+}
+.estrela input[type="radio"]{
+    transform: scale(1.5);
     margin-top: 5px;
 }
-.pontuar input[type=radio]{
-    margin-left: 5px;
+footer {
+    background-color: blue;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    border-radius: 0 0 5px 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: .7rem;
+    margin-top: 20px;
 }
-

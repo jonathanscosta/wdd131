@@ -29,7 +29,7 @@
     <main>
         <form method="get" action="avaliacao.html">
             <fieldset class="produtos">
-                <legend>Nome do produto</legend>
+                <legend>Nome do produto*</legend>
 
                 <select name="produto" id="produto" required>
                     <option value="opcao" selected disabled>Escolha um produto...</option>
@@ -60,14 +60,12 @@
                 </div>
 
                 <div class="estrela">
-
-                <div class="estrela"></div>
                 <label for="4">⭐⭐⭐⭐</label>
                 <input type="radio" id="4" name="avaliar" value="4">
                 </div>
 
                 <div class="estrela">
-                    
+
                 <label for="5">⭐⭐⭐⭐⭐</label>
                 <input type="radio" id="5" name="avaliar" value="5">
                 </div>
@@ -76,10 +74,16 @@
 
             <fieldset class="classificar">
                 <legend>Data de Instalação</legend>
+                <input type="date">
             </fieldset>
 
             <fieldset class="avaliar">
                 <legend>Avaliação Escrita</legend>
+
+                <textarea name="texto" id="texto"></textarea>
+
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome">
             </fieldset>
         </form>
     </main>
