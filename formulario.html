@@ -10,6 +10,7 @@
 
     <title>Formulário</title>
     <link rel="stylesheet" href="estilos/formulario.css">
+    <link rel="stylesheet" href="estilos/formulario-grande.css">
 
     <!-- __________________________FONTES________________________________ -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,7 +30,7 @@
     <main>
         <form method="get" action="avaliacao.html">
             <fieldset class="produtos">
-                <legend>Nome do produto*</legend>
+                <label for="produto">Nome do produto*</label>
 
                 <select name="produto" id="produto" required>
                     <option value="opcao" selected disabled>Escolha um produto...</option>
@@ -40,40 +41,42 @@
 
             <fieldset class="pontuar">
 
-                <legend>Classificação Geral</legend>
+                <label>Classificação Geral</label>
 
-                <div class="estrela">
-                    <label for="1">⭐</label>
-                    <input type="radio" id="1" name="avaliar" value="1">
+                <div class="estrelas">
+
+                    <div class="estrela">
+                        <label for="1">⭐</label>
+                        <input type="radio" id="1" name="avaliar" value="1">
+                    </div>
+
+                    <div class="estrela">
+                        <label for="2">⭐⭐</label>
+                        <input type="radio" id="2" name="avaliar" value="2">
+                    </div>
+
+                    <div class="estrela">
+                        <label for="3">⭐⭐⭐</label>
+                        <input type="radio" id="3" name="avaliar" value="3">
+                    </div>
+
+                    <div class="estrela">
+                        <label for="4">⭐⭐⭐⭐</label>
+                        <input type="radio" id="4" name="avaliar" value="4">
+                    </div>
+
+                    <div class="estrela">
+                        <label for="5">⭐⭐⭐⭐⭐</label>
+                        <input type="radio" id="5" name="avaliar" value="5">
+                    </div>
+
                 </div>
 
-                <div class="estrela">
-
-                    <label for="2">⭐⭐</label>
-                    <input type="radio" id="2" name="avaliar" value="2">
-                </div>
-
-                <div class="estrela">
-
-                    <label for="3">⭐⭐⭐</label>
-                    <input type="radio" id="3" name="avaliar" value="3">
-                </div>
-
-                <div class="estrela">
-                    <label for="4">⭐⭐⭐⭐</label>
-                    <input type="radio" id="4" name="avaliar" value="4">
-                </div>
-
-                <div class="estrela">
-
-                    <label for="5">⭐⭐⭐⭐⭐</label>
-                    <input type="radio" id="5" name="avaliar" value="5">
-                </div>
             </fieldset>
 
 
             <fieldset class="classificar">
-                <legend>Data de Instalação</legend>
+                <label for="data">Data de Instalação*</label>
                 <input type="date" id="data" name="data" required>
 
                 <legend>Quais recursos achou mais útil no produto? <br>
@@ -102,11 +105,11 @@
             </fieldset>
 
             <fieldset class="avaliar">
-                <legend>Avaliação Escrita</legend>
+                <label for="texto">Avaliação Escrita (opcional)</label>
 
                 <textarea name="texto" id="texto"></textarea>
 
-                <legend>Nome</legend>
+                <label for="nome">Seu Nome (opcional)</label>
                 <input type="text" id="nome" name="nome">
             </fieldset>
 
