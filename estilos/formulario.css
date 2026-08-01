@@ -7,6 +7,8 @@
 body {
     max-width: 360px;
     height: 100vh;
+    margin: 0 auto;
+    
 }
 
 header,
@@ -35,7 +37,6 @@ h1 {
     padding: 10px;
     font-size: 1rem;
     border-radius: 5px 5px 0 0;
-    margin-bottom: 20px;
     text-align: center;
 }
 legend{
