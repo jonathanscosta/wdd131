@@ -1,6 +1,17 @@
 
-const galeria = [{ nome: "Cozinha 01", url: "imagens/cozinha01.webp" },
-{ nome: "Suite01", url: "imagens/suite01.webp" }, { nome: "Sala 01", url: "imagens/sala01.webp" }
+const galeria = [{
+    nome: "Cozinhas Planejadas",
+    url: ["imagens/cozinha01.webp", "imagens/cozinha02.webp", "imagens/cozinha03.webp"]
+},
+
+
+{
+    nome: "Suites Planejadas",
+    url: ["imagens/suite01.webp", "imagens/suite02.webp", "imagens/suite03.webp"]
+}, {
+    nome: "Salas Planejadas",
+    url: ["imagens/sala01.webp", "imagens/sala02.webp", "imagens/sala-hero2.webp"]
+}
 ];
 
 
@@ -22,7 +33,7 @@ function criarCard() {
         const a = document.createElement("a")
         titulo.textContent = cards.nome;
         a.href = "ambientesPlanejados.html"
-        img.src = cards.url;
+        img.src = cards.url[0];
         img.alt = cards.nome;
         img.loading = "lazy"
 
@@ -30,8 +41,30 @@ function criarCard() {
         a.appendChild(img);
         card.appendChild(a);
 
+        animacao(img, cards.url)
 
     });
 }
+
+function animacao(imagem, listaImagem) {
+
+    let indice = 0;
+
+    setInterval(() => {
+        indice++;
+
+        if (indice >= listaImagem.length) {
+            indice = 0;
+        }
+        imagem.style.opacity = 0;
+
+        setTimeout(() => {
+            imagem.src = listaImagem[indice];
+            imagem.style.opacity = 1;
+        }, 2000)
+    }, 4000)
+
+}
+
 
 criarCard(galeria);

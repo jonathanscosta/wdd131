@@ -14,8 +14,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-     background-color: var(--fundo-hero);
+
+body {
+    background-color: var(--fundo-hero);
 }
 
 header,
@@ -29,7 +30,7 @@ footer {
 main {
     height: 100vh;
     margin: 0 auto;
-   
+
 }
 
 
@@ -83,6 +84,10 @@ footer {
 
 #menu {
     display: none;
+    position: absolute;
+    top: 10%;
+    left: 0;
+    z-index: 1;
 
 }
 
@@ -133,7 +138,6 @@ footer {
     height: 500px;
     position: relative;
 
-
     overflow: auto;
 }
 
@@ -145,10 +149,12 @@ footer {
 
 .card {
 
-    
+
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+
 
 
 
@@ -156,8 +162,12 @@ footer {
 
 .card img {
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
     border-radius: 20px;
+    transition: opacity 3s ease-out;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
 
 }
 
@@ -168,7 +178,7 @@ footer {
 }
 
 .card a h2 {
-    margin: 0 auto;
+    margin: 20px auto 0 auto;
     text-align: center;
 
 }
