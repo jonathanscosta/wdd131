@@ -1,16 +1,7 @@
 
 const galeria = [{
-    nome: "Cozinhas Planejadas",
-    url: ["imagens/cozinha01.webp", "imagens/cozinha02.webp", "imagens/cozinha03.webp"]
-},
-
-
-{
-    nome: "Suites Planejadas",
-    url: ["imagens/suite01.webp", "imagens/suite02.webp", "imagens/suite03.webp"]
-}, {
-    nome: "Salas Planejadas",
-    url: ["imagens/sala01.webp", "imagens/sala02.webp", "imagens/sala-hero2.webp"]
+    nome: "Ambientes Planejados" ,
+    url: ["imagens/cozinha01.webp", "imagens/cozinha02.webp", "imagens/cozinha03.webp","imagens/suite01.webp", "imagens/suite02.webp", "imagens/suite03.webp","imagens/sala01.webp", "imagens/sala02.webp", "imagens/sala-hero2.webp"]
 }
 ];
 
@@ -56,13 +47,16 @@ function animacao(imagem, listaImagem) {
         if (indice >= listaImagem.length) {
             indice = 0;
         }
+        
         imagem.style.opacity = 0;
 
         setTimeout(() => {
+    
             imagem.src = listaImagem[indice];
+        
             imagem.style.opacity = 1;
-        }, 2000)
-    }, 4000)
+        }, 3000)
+    }, 5000)
 
 }
 
