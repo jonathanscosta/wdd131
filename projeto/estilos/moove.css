@@ -1,298 +1,248 @@
 :root {
-    --fundo-header: #FAFAF8;
-    --texto-titulo: #2E3133;
-    --fundo-hero: #F2EEE8;
-    --botao: #47614E;
-    --texto-botao: #FFFFFF;
-    --borda: #D9D9D6;
+    --textoBotao: #D9D9D6;
+    --fundoHeader: #FAFAF8;
+    --fundoHero: #F2EEE8;
+    --corBotao: #47614E;
+    --textoTitulo: #2E3133;
     --azul: #0171BFCC;
+    --fonteTitulo: 'Poppins', 'Segoe UI', Arial, Helvetica, sans-serif;
+    --fonteCorpo: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
-
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
-
-/* ____________________BODY_________________________________ */
-
 body {
-    width: 100%;
-    min-height: 100vh;
-    background-color: var(--fundo-hero);
+    background-color: var(--fundoHero);
+
 }
 
-
-/* ____________________HEADER_________________________________ */
-
 header,
+main,
 footer {
-    width: 100%;
     max-width: 400px;
+    width: 100%;
     margin: 0 auto;
+
+}
+
+header {
+    border-radius: 20px 20px 0 0;
 }
 
 
 .cabecalho {
-    position: absolute;
-    top: 0;
-    left: 0;
-
     display: flex;
+    justify-content: center;
     align-items: center;
-
-    width: 100%;
-    max-width: 400px;
-
+    margin: 0 auto;
     padding: 20px;
-
-    gap: 15px;
-
+    position: absolute;
     z-index: 10;
+    gap: 50px;
+
 }
-
-
-.cabecalho h1 {
-    color: var(--texto-botao);
-
-    font-family:
-        'Poppins',
-        'Segoe UI',
-        Arial,
-        Helvetica,
-        sans-serif;
-
-    text-shadow:
-        3px 3px 5px var(--azul);
-}
-
 
 .cabecalho img {
     width: 50px;
     height: 50px;
-
     border-radius: 50%;
-    object-fit: cover;
+
 }
 
-
-/* ____________________BOTÃO MENU_________________________________ */
-
-#menuBotao {
-    margin-left: auto;
-
-    width: 50px;
-    height: 50px;
-
-    background: none;
-    border: none;
-
-    cursor: pointer;
-
-    color: var(--texto-botao);
-
-    text-shadow:
-        0 0 5px var(--azul),
+.cabecalho h1 {
+    font-family: var(--fonteTitulo);
+    color: var(--fundoHeader);
+    margin: 0 auto;
+    text-shadow: 0 0 5px var(--azul),
         0 0 10px var(--azul),
         0 0 15px var(--azul);
 }
 
+.cabecalho ul {
 
-#menuBotao::before {
-    content: "≡";
-    font-size: 3rem;
+    list-style: none;
+    padding: 0;
+    margin-left: 10px;
 }
 
-
-#menuBotao.aberto::before {
-    content: "✕";
-    font-size: 2rem;
+.botaoMenu {
+    border: none;
+    font-size: 2.5rem;
+    background: none;
+    color: var(--fundoHeader);
+    text-shadow: 0 0 5px var(--azul),
+        0 0 10px var(--azul),
+        0 0 15px var(--azul);
 }
 
-/* ____________________MENU_________________________________ */
-
-#menu {
+.menu {
     display: none;
 
-    position: absolute;
 
-    top: 90px;
-    left: 0;
-
-    width: 100%;
-
-    z-index: 20;
 }
 
-
-#menu.abrir {
-    display: block;
-
+.menu.active {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-
-    padding: 20px;
+    position: absolute;
+    z-index: 10;
+    left: 20%;
+    top: 10%;
 }
 
-
-#menu ul {
-    list-style: none;
-
-    margin: 0;
-    padding: 0;
-}
-
-
-#menu a {
-    display: block;
-
-    padding: 10px;
-
-    margin: 5px 0;
-
-    font-family:
-        'Roboto',
-        'Segoe UI',
-        Arial,
-        Helvetica,
-        sans-serif;
-
+.menu a {
+    text-decoration: none;
+    font-family: var(--fonteCorpo);
     font-size: 1.2rem;
     font-weight: 700;
-
-    color: var(--texto-botao);
-
-    text-decoration: none;
-
-    background-color: var(--azul);
-
     border-radius: 10px;
+    background-color: var(--azul);
+    padding: 10px;
+    color: var(--fundoHeader);
+
+
 }
 
+.menu li {
+    padding: 5px;
+    margin: 15px;
 
-____________________MAIN_________________________________
-main {
-    width: 100%;
-    max-width: 400px;
-
-    margin: 0 auto;
-
-    font-family:
-        'Roboto',
-        'Segoe UI',
-        Arial,
-        Helvetica,
-        sans-serif;
 }
 
-
-/* ____________________HERO_________________________________ */
+.menu ul {
+    list-style: none;
+    padding-left: 0;
+}
 
 .hero {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    max-width: 400px;
     width: 100%;
-    height: 100svh;
-    margin: 0 auto;
-    overflow: hidden;
+    border-radius: 20px 20px 0 0;
 }
-
-
-/* ____________________IMAGEM HERO_________________________________ */
 
 .hero img {
-    display: block;
-
     width: 100%;
-    height: 100%;
-
+    display: block;
     object-fit: cover;
+    border-radius: 20px 20px 0 0;
 }
 
-
-/* ____________________TEXTO HERO_________________________________ */
-
-.hero h2 {
+.tituloHero {
+    font-family: var(--fonteTitulo);
     position: absolute;
+    top: 35%;
+    left: 10%;
+    font-weight: 700;
+    color: var(--fundoHeader);
+    text-shadow: 0 0 5px var(--azul),
+        0 0 10px var(--azul),
+        0 0 15px var(--azul);
+    font-size: 2rem;
+}
 
-    top: 30%;
-    left: 15%;
-
-    width: 70%;
-
-    font-family:
-        'Poppins',
-        'Segoe UI',
-        Arial,
-        Helvetica,
-        sans-serif;
-
+.orcamento {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+    z-index: 10;
+    background-color: var(--corBotao);
+    font-family: var(--fonteTitulo);
     font-size: 1.5rem;
+    font-weight: 600;
 
-    color: var(--texto-titulo);
+    padding: 10px;
+    border-radius: 20px;
 
-    text-shadow:
-        0 0 5px var(--texto-botao),
-        0 0 10px var(--texto-botao),
-        0 0 15px var(--texto-botao),
-        0 0 20px var(--texto-botao);
+    cursor: pointer;
+
+    transition: 1s ease;
+    cursor: pointer;
+    
 }
 
 
-/* ____________________main_________________________________ */
+.orcamento:hover {
+    
+    
+}
+
+
+
+.orcamento a {
+    text-decoration: none;
+    color: var(--fundoHeader);
+}
 
 .card {
-    display: flex;
-
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
     width: 90%;
-}
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    gap: 50px;
 
+
+
+}
 
 .card img {
     width: 100%;
-    max-width: 400px;
-
-    height: 400px;
-
+    height: 300px;
     object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 
-    margin: 0 auto;
+}
+
+.card h2 {
+    font-family: var(--fonteTitulo);
+    color: var(--textoTitulo);
+}
+
+.carrosselDepoimentos {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+
+
+    padding: 10px 20px 20px;
+
+    scrollbar-width: none;
+}
+
+.carrosselDepoimentos::-webkit-scrollbar {
+    display: none;
+}
+
+.depoimento {
+    min-width: 85%;
+    scroll-snap-align: center;
+
+    background-color: var(--fundoHeader);
 
     border-radius: 20px;
 
-    transition: opacity 3s ease-out;
-}
+    padding: 25px;
 
-
-.card a {
-    color: var(--texto-titulo);
-
-    text-decoration: none;
-}
-
-
-.card a h2 {
-    margin: 20px auto 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
 
     text-align: center;
+
+
 }
 
-
-/* ____________________FOOTER_________________________________ */
-
-footer {
-    font-family:
-        'Roboto',
-        'Segoe UI',
-        Arial,
-        Helvetica,
-        sans-serif;
+.depoimento img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
 }

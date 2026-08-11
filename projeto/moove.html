@@ -4,70 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta name="description"
-        content="Este é o site da moove ambientes planejados, uma loja de móveis planejados com o objetivo de realizar sonhos, o site possui 3 páginas sendo elas a página principal, a página de ambientes e a página fale conosco">
+        content="Este é um site de móveis planejados, ele tem como objetivo, facilitar com que o cliente tenha acesso aos projetos, consiga entrar em contato com a loja e possa após a compra dos móveis da sua opnião sobre como foi seu atendimento">
+
     <meta name="author" content="Francisco Jonathan Sousa da Costa">
 
+
+    <!-- ==========ESTILOS========== -->
     <link rel="stylesheet" href="estilos/moove.css">
-    <title>Moove Ambientes Planejados</title>
 
-    <!-- ______________________fontes_______________________ -->
 
+    <!-- ==========SCRIPTS========== -->
+    <script src="scripts/moove.js" defer></script>
+
+
+    <!-- ==========FONTES========== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <!-- ______________________script_______________________ -->
-    <script src="scripts/moove.js" defer></script>
+    <title>Moove Móveis Planejados</title>
 
 
 </head>
 
 <body>
+
     <header>
         <div class="cabecalho">
+            <img src="imagens/logo2.webp" alt="logo da moove">
 
-            <img src="imagens/logo2.webp" alt="Logo da Moove">
             <h1>Moove</h1>
-            <button id="menuBotao" aria-label="Abrir menu"></button>
-        </div>
 
-        <nav id="menu">
+            <button class="botaoMenu" id="botaoMenu" aria-label="abrir menu">≡</button>
+
+
+        </div>
+        <nav id="menu" class="menu">
             <ul>
                 <li><a href="#">Página Inicial</a></li>
                 <li><a href="ambientesPlanejados.html">Ambientes Planejados</a></li>
-                <li><a href="#">Fale Conosco</a></li>
+                <li><a href="faleConosco.html">Fale Conosco</a></li>
             </ul>
         </nav>
 
-    </header>
 
-    <main>
-        <div class="hero">
-            <img src="imagens/sala-hero01.webp" alt="cozinha planejada">
-            <h2>
-                <h2>
-                Seu espaço, do seu jeito.
-                <br><br>
-                Móveis planejados que
-                transformam ambientes
-                em lugares únicos.
-            </h2>
-            </h2>
 
-        </div>
+        <main>
+            <div class="hero">
+                <img src="imagens/sala-hero01.webp" alt="sala planejada">
+            </div>
+            <h2 class="tituloHero">"Cada espaço tem uma história. Nós planejamos a sua."</h2>
 
-        <section class="card">
+            <button class="orcamento"><a href="faleConosco.html">Faça seu Orçamento</a></button>
 
-        </section>
-    </main>
+            <div class="card">
 
-    <footer>
+            </div>
 
-    </footer>
+            <section class="depoimentos">
 
+                <h2>O que nossos clientes dizem</h2>
+
+                <div class="carrosselDepoimentos">
+
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
 </body>
 
 </html>
