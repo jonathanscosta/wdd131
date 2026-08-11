@@ -252,6 +252,75 @@ header {
     object-fit: cover;
 }
 
-footer h3{
-    z-index: 10;
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--fundoHero);
+    border-radius: 0 0 20px 20px;
+     justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: relative;
+}
+
+footer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+   
+   
+}
+.contato{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px;
+    text-align: center;
+}
+.contato img{
+    width: 50px;
+    height: 50px;
+}
+
+.contato p{
+    font-family: var(--fonteCorpo);
+    font-size: medium;
+    font-weight: 800;
+}
+.botaoFooter{
+    position: absolute;
+    border: none;
+   background-color: var(--corBotao);
+   border-radius: 20px;
+   padding: 10px;
+   transition: .3s;
+   animation: pulsar 2s infinite;
+   top: 60%;
+
+   margin-bottom: 20px;
+}
+
+.botaoFooter:hover{
+     background-color: green;
+}
+@keyframes pulsar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.botaoFooter a{
+    text-decoration: none;
+    color: var(--fundoHeader);
 }
