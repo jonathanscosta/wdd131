@@ -147,29 +147,31 @@ header {
 }
 
 .orcamento {
-    position: absolute;
-    top: 70%;
-    right: 5%;
-    z-index: 10;
-    background-color: var(--corBotao);
-    font-family: var(--fonteTitulo);
-    font-size: 1.5rem;
-    font-weight: 600;
-
-    padding: 10px;
-    border-radius: 20px;
-
-    cursor: pointer;
-
-    transition: 1s ease;
-    cursor: pointer;
-    
+   position: absolute;
+   top: 70%;
+   right: 10%;
+   border: none;
+   background-color: var(--corBotao);
+   border-radius: 20px;
+   padding: 10px;
+   transition: .3s;
+   animation: pulsar 2s infinite;
+   
+}
+.orcamento:hover{
+    background-color: green;
 }
 
-
-.orcamento:hover {
-    
-    
+@keyframes pulsar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
 }
 
 
