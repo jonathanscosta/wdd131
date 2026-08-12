@@ -6,3 +6,18 @@ const galeria = [{ nome: "Cozinhas Planejadas", url: ["imagens/cozinha01.webp", 
 
 {nome: "Suites Planejadas", url: ["imagens/suite01.webp", "imagens/suite02.webp", "imagens/suite03.webp"]}]
 
+const botaoMenu = document.querySelector("#botaoMenu");
+const menu = document.querySelector("#menu");
+
+botaoMenu.addEventListener('click', () => {
+    menu.classList.toggle("active");
+
+    if (menu.classList.contains("active")) {
+        botaoMenu.textContent = "✕"
+        botaoMenu.setAttribute("aria-label", "fechar menu");
+    }
+    else {
+        botaoMenu.textContent = "≡";
+        botaoMenu.setAttribute("aria-label", "abrir menu")
+    }
+})
