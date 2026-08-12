@@ -46,7 +46,7 @@ function criarCard(array) {
     img.alt = ambientes.nome;
     img.loading = "lazy"
     preco.innerHTML = `<strong>${ambientes.preco}</strong>`;
-    botao.textContent = "Adicionar ao Carrinho"
+    botao.textContent = "Adicionar aos Favoritos"
     
     
     card.appendChild(titulo2);
