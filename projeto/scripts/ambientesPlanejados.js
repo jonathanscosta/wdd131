@@ -30,7 +30,7 @@ function criarCard(array) {
     const container = document.querySelector(".container");
     container.innerHTML = ""
     const titulo = document.createElement("h1");
-    titulo.textContent = "Ambientes planejados";
+    titulo.textContent = "Ambientes Planejados";
     container.appendChild(titulo);
 
     galeria.forEach(ambientes=>{
