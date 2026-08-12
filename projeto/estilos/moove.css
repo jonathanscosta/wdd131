@@ -7,6 +7,7 @@
     --azul: #0171BFCC;
     --verde: #01ad38;
     --azulNeon:#00FFFF;
+    --textoBranco:#fff;
     --fonteTitulo: 'Poppins', 'Segoe UI', Arial, Helvetica, sans-serif;
     --fonteCorpo: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -75,7 +76,7 @@ header {
     border: none;
     font-size: 2.5rem;
     background: none;
-    color: var(--fundoHeader);
+    color: var(--textoBranco);
     text-shadow: 0 0 5px var(--azul),
         0 0 10px var(--azul),
         0 0 15px var(--azul);
@@ -345,5 +346,5 @@ footer img {
 
 .botaoFooter a {
     text-decoration: none;
-    color: var(--fundoHeader);
+    color: var(--textoBranco);
 }

@@ -125,6 +125,7 @@ function criarDepoimentos() {
         nome.textContent = cliente.nome;
 
         img.src = cliente.url
+        img.alt = cliente.nome
 
         estrelas.textContent = "⭐".repeat(cliente.avaliacao);
 
