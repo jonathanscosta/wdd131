@@ -39,17 +39,20 @@ function criarCard(array) {
     const titulo2 = document.createElement("h2");
     const img = document.createElement("img");
     const preco = document.createElement("p")
+    const botao = document.createElement("button")
 
     titulo2.textContent = ambientes.nome
     img.src = ambientes.url;
     img.alt = ambientes.nome;
     img.loading = "lazy"
     preco.innerHTML = `<strong>${ambientes.preco}</strong>`;
+    botao.textContent = "Adicionar ao Carrinho"
     
     
     card.appendChild(titulo2);
     card.appendChild(img);
     card.appendChild(preco);
+    card.appendChild(botao)
     
     container.append(card);
     })
