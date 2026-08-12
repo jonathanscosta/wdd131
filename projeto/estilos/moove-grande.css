@@ -26,9 +26,9 @@
 
     .menu ul a:hover{
         font-size: 1.2rem;
-        box-shadow: 0 0 5px aqua,
-        0 0 10px aqua,
-        0 0 15px aqua;
+        box-shadow: 0 0 5px var(--azulNeon),
+        0 0 10px var(--azulNeon),
+        0 0 15px var(--azulNeon);
 
         
     }

@@ -5,6 +5,8 @@
     --corBotao: #47614E;
     --textoTitulo: #2E3133;
     --azul: #0171BFCC;
+    --verde: #01ad38;
+    --azulNeon:#00FFFF;
     --fonteTitulo: 'Poppins', 'Segoe UI', Arial, Helvetica, sans-serif;
     --fonteCorpo: 'Roboto', Arial, Helvetica, sans-serif;
 }
@@ -163,7 +165,7 @@ header {
 }
 
 .orcamento:hover {
-    background-color: green;
+    background-color: var(--verde);
 }
 
 @keyframes pulsar {
@@ -324,7 +326,7 @@ footer img {
 }
 
 .botaoFooter:hover {
-    background-color: green;
+    background-color: var(--verde);
 }
 
 @keyframes pulsar {
