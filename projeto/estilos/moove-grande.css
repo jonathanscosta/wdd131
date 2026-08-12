@@ -1,0 +1,55 @@
+
+/* =============versão desktop============= */
+
+@media (min-width: 800px) {
+
+    .botaoMenu {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        z-index: 10;
+        right: 20%;
+        top: 2%;
+        position: absolute;
+        
+    }
+    
+
+    .menu ul {
+        display: flex;
+        flex-direction: row;
+        transition: 2s ease-out;
+    }
+
+    .menu ul a:hover{
+        font-size: 1.2rem;
+        box-shadow: 0 0 5px aqua,
+        0 0 10px aqua,
+        0 0 15px aqua;
+
+        
+    }
+
+    header,
+    main,
+    footer {
+        max-width: 1600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero {
+        max-width: 1600px;
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .hero img {
+        height: 560px;
+    }
+
+}
