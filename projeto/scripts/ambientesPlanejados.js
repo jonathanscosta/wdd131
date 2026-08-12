@@ -43,6 +43,7 @@ function criarCard(array) {
     titulo2.textContent = ambientes.nome
     img.src = ambientes.url;
     img.alt = ambientes.nome;
+    img.loading = "lazy"
     preco.innerHTML = `<strong>${ambientes.preco}</strong>`;
     
     
