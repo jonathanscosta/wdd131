@@ -1,0 +1,337 @@
+:root {
+
+    --textoBotao: #D9D9D6;
+    --fundoHeader: #FAFAF8;
+    --fundoHero: #F2EEE8;
+    --corBotao: #47614E;
+    --textoTitulo: #2E3133;
+    --azul: #0171BFCC;
+    --verde: #01ad38;
+    --textoBranco: #fff;
+
+    --fonteTitulo:
+        'Poppins',
+        'Segoe UI',
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    --fonteCorpo:
+        'Roboto',
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+
+
+* {
+
+    padding: 0;
+
+    margin: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    background-color: var(--fundoHero);
+
+    min-height: 100vh;
+
+}
+
+
+
+
+header,
+main,
+footer {
+
+    width: 100%;
+
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+}
+
+
+
+
+.cabecalho {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 30px;
+
+    padding: 20px;
+
+}
+
+
+.cabecalho img {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+}
+
+
+.cabecalho h1 {
+
+    font-family: var(--fonteTitulo);
+
+    color: var(--fundoHeader);
+
+    text-shadow:
+
+        0 0 5px var(--azul),
+        0 0 10px var(--azul),
+        0 0 15px var(--azul);
+
+}
+
+
+
+
+.botaoMenu {
+
+    display: block;
+
+    border: none;
+
+    background: none;
+
+    color: var(--textoBranco);
+
+    font-size: 2.5rem;
+
+    cursor: pointer;
+
+    text-shadow:
+
+        0 0 5px var(--azul),
+        0 0 10px var(--azul),
+        0 0 15px var(--azul);
+
+}
+
+
+
+
+.menu {
+
+    display: none;
+
+}
+
+
+.menu.active {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+.menu ul {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+
+    list-style: none;
+
+}
+
+
+.menu a {
+
+    display: block;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    background-color: var(--azul);
+
+    color: var(--fundoHeader);
+
+    font-family: var(--fonteCorpo);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+}
+
+
+
+
+.formulario {
+
+    width: 90%;
+
+    max-width: 600px;
+
+    margin: 40px auto;
+
+}
+
+
+.formulario h2 {
+
+    font-family: var(--fonteTitulo);
+
+    font-size: 2rem;
+
+    text-align: center;
+
+    color: var(--textoTitulo);
+
+    margin-bottom: 10px;
+
+}
+
+
+.formulario > p {
+
+    font-family: var(--fonteCorpo);
+
+    text-align: center;
+
+    font-size: 1.1rem;
+
+    margin-bottom: 30px;
+
+}
+
+
+#formProjeto {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+}
+
+
+#formProjeto label {
+
+    font-family: var(--fonteCorpo);
+
+    font-weight: 700;
+
+    color: var(--textoTitulo);
+
+    margin-top: 10px;
+
+}
+
+
+#formProjeto input,
+#formProjeto textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 10px;
+
+    background-color: var(--fundoHeader);
+
+    font-family: var(--fonteCorpo);
+
+    font-size: 1rem;
+
+}
+
+
+#formProjeto textarea {
+
+    resize: vertical;
+
+    min-height: 150px;
+
+}
+
+
+#formProjeto input:focus,
+#formProjeto textarea:focus {
+
+    outline: none;
+
+    border: 2px solid var(--azul);
+
+}
+
+
+
+
+#formProjeto button {
+
+    padding: 13px;
+
+    margin-top: 20px;
+
+    border: none;
+
+    border-radius: 20px;
+
+    background-color: var(--verde);
+
+    color: var(--textoBranco);
+
+    font-family: var(--fonteCorpo);
+
+    font-size: 1rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: transform 0.2s;
+
+}
+
+
+#formProjeto button:hover {
+
+    transform: scale(1.03);
+
+}
+
+
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    font-family: var(--fonteCorpo);
+
+}

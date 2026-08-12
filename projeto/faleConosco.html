@@ -1,11 +1,159 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description"
+        content="Este é um site de móveis planejados, ele tem como objetivo, facilitar com que o cliente tenha acesso aos projetos, consiga entrar em contato com a loja e possa após a compra dos móveis da sua opnião sobre como foi seu atendimento">
+
+    <meta name="author" content="Francisco Jonathan Sousa da Costa">
+
+
+    <!-- ==========ESTILOS========== -->
+    <link rel="stylesheet" href="estilos/faleConosco.css">
+    <link rel="stylesheet" href="estilos/faleConosco-grande.css">
+
+
+    <!-- ==========SCRIPTS========== -->
+    <script src="scripts/faleConosco.js" defer></script>
+
+
+    <!-- ==========FONTES========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <title>Moove Móveis Planejados</title>
 </head>
+
 <body>
-    <h1>Fale Conosco</h1>
+    <!-- ==================== CABEÇALHO ==================== -->
+
+    <header>
+
+        <div class="cabecalho">
+
+            <img src="imagens/logo2.webp" alt="Logo da Moove">
+
+            <h1>Moove</h1>
+            <button class="botaoMenu" id="botaoMenu" aria-label="abrir menu">
+                ≡
+            </button>
+
+        </div>
+
+
+        <nav class="menu">
+
+            <ul>
+
+                <li>
+                    <a href="moove.html">
+                        Página Inicial
+                    </a>
+                </li>
+
+                <li>
+                    <a href="ambientesPlanejados.html">
+                        Ambientes
+                    </a>
+                </li>
+
+                <li>
+                    <a href="faleConosco.html">
+                        Fale Conosco
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+
+
+    <main>
+
+        <section class="formulario">
+
+            <h2>Fale Conosco</h2>
+
+            <p>
+                Conte para nós como você imagina seu
+                ambiente planejado.
+            </p>
+
+
+            <form id="formProjeto">
+
+
+
+
+                <label for="nome">
+                    Nome
+                </label>
+
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+
+
+
+                <label for="email">
+                    E-mail
+                </label>
+
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
+
+
+
+                <label for="telefone">
+                    Telefone
+                </label>
+
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+
+
+
+
+                <label for="projeto">
+                    Como deseja seu projeto?
+                </label>
+
+                <textarea id="projeto" name="projeto" rows="7"
+                    placeholder="Descreva como você gostaria que fosse seu projeto..."></textarea>
+
+
+
+
+                <button type="submit">
+                    Enviar pedido
+                </button>
+
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    
+
+    <footer>
+
+        <p>
+            © 2026 Moove Móveis Planejados
+        </p>
+
+    </footer>
+
+
 </body>
+
 </html>

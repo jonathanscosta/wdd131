@@ -1,0 +1,66 @@
+
+
+@media (min-width: 800px) {
+
+
+   
+
+    .cabecalho {
+
+        justify-content: center;
+
+    }
+
+
+   
+
+    .botaoMenu {
+
+        display: none;
+
+    }
+
+
+   
+
+    .menu {
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+    }
+
+
+    .menu ul {
+
+        display: flex;
+
+        flex-direction: row;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 20px;
+
+    }
+
+
+    .menu li {
+
+        list-style: none;
+
+    }
+
+
+
+    .formulario {
+
+        margin-top: 60px;
+
+    }
+
+}
