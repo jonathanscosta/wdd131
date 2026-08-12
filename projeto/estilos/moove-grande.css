@@ -51,5 +51,21 @@
     .hero img {
         height: 560px;
     }
+    .depoimento {
+    min-width: 70%;
+    width: 300px;
+    margin-bottom: 20px;
+
+}
+.orcamento {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+   
+
+}
+footer{
+    margin-bottom: 20px;
+}
 
 }
